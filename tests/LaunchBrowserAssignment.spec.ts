@@ -13,10 +13,10 @@ const page2 = await context2.newPage()
 await page1.goto("https://www.redbus.in")
 await page2.goto("https://www.flipkart.com")
 
-console.log("The title of the page is "+await page1.title())
-console.log("The title of the page is "+await page2.title())
-console.log("The title of the page is "+page1.url())
-console.log("The title of the page is "+page2.url())
+console.log("The title of the RedBus  page is "+await page1.title())
+console.log("The title of the FilpKart page is "+await page2.title())
+console.log("The URL of the RedBus page is "+page1.url())
+console.log("The URL of the Filpkart page is "+page2.url())
 
 
 })
