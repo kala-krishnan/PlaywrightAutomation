@@ -1,5 +1,5 @@
 import test,{expect} from "@playwright/test"
-test("Launching SalesForce Website " ,async({page})=>{
+test("Asserting Select Dropdown " ,async({page})=>{
 
 
     await page.goto("https://leafground.com/select.xhtml")
