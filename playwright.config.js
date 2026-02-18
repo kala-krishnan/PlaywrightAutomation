@@ -33,14 +33,21 @@ export default defineConfig({
     trace: 'on',
     headless: false,
     video:'on',
-    screenshot:'on'
+    screenshot:'on',
+    permissions: []
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {  channel:'chrome',
+       viewport:null,
+        launchOptions:{
+          args:['--start-maximized','--disable-notifications']
+        }
+      },
+
     },
 
     /*{
